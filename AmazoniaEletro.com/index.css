@@ -1,0 +1,185 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+/* Adicione isto para o efeito de marca d'água */
+body::before {
+    content: "";
+    background-image: url('fundo_amazonia_eletro_Prancheta_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.3; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+/* Clearfix para elementos flutuantes */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Cabeçalho */
+header.menu {
+    background-color: #232f3e;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header.menu img {
+    max-width: 470px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Navegação */
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #ff9900;
+    color: #111;
+}
+
+/* Conteúdo principal - Apresentação */
+main.apresentação {
+    display: block;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Categorias */
+main.apresentação ul.clearfix {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+}
+
+#Smartphones, #Notebooks, #Acessórios {
+    float: left;
+    width: 30%;
+    margin: 0 1.5%;
+    background-color: #ff9900;
+    color: #111;
+    padding: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+/* Seção de Produtos */
+main.produtos {
+    display: block;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main.produtos ul.clearfix {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: 20px auto;
+}
+
+main.produtos ul.clearfix li {
+    float: left;
+    width: 30%;
+    margin: 0 1.5%;
+    position: relative;
+    list-style: none;
+}
+
+main.produtos img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+/* Textos */
+main.apresentação h2 {
+    color: #232f3e;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+main.apresentação p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+}
+
+/* Rodapé */
+footer {
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffa41c;
+}

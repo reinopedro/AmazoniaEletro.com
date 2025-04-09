@@ -1,0 +1,177 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+body::before {
+    content: "";
+    background-image: url('fundo_amazonia_eletro_Prancheta_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.3; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+/* Cabeçalho */
+header.menu {
+    background-color: #232f3e;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header.menu img {
+    max-width: 470px;
+    display: block;
+    margin: 0 auto 15px;
+}
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    background-color: #232f3e;
+}
+
+nav ul li a:hover {
+    background-color: #ff9900;
+    color: #111;
+}
+
+/* Seções principais */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+section h2 {
+    color: #232f3e;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section li {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Botões */
+button {
+    background-color: #ffa41c;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff8c00;
+}
+
+/* Rodapé */
+footer {
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffa41c;
+}
+
+/* Estilo do Formulário de Contato */
+table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"], button[type="reset"] {
+    background-color: #37475a;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover {
+    background-color: #ff9900;
+    color: #111;
+}
